@@ -41,10 +41,11 @@
   --credits-links: hsl(0, 0%, 95%);
 }
 
+
 :root {
   --max-width: 70rem;
   --header-height: 40px;
-  --default-font: Arial, Helvetica, freesans, sans-serif;
+  --default-font: Arial, Helvetica, sans-serif;
   --default-font-size: 1em;
   --default-nav-size: 0.713em;
   --default-pad-min: 0.5em;
@@ -58,7 +59,7 @@ body {
   color: var(--text-color);
   font-family: var(--default-font);
   transition: all 0.2s ease-in-out;
-
+}
 
 h1,
 h2,
@@ -67,19 +68,20 @@ h4,
 h5,
 h6 {
   color: var(--header-color);
-
+}
 
 a:link,
 a:visited,
 a:hover,
 a:active {
   text-decoration: none;
-
+}
 
 .app-header {
   background-color: var(--header-bg);
   height: var(--header-height);
 
+}
 
 .app-logo {
   width: 80px;
@@ -88,7 +90,7 @@ a:active {
   background-size: contain;
   height: var(--header-height);
   line-height: var(--header-height);
-
+}
 
 .mobile-nav, label[for='mobile-nav'] {
   position: absolute;
@@ -99,12 +101,12 @@ a:active {
   width: 40px;
   cursor: pointer;
   z-index: 10;
-
+}
 
 .mobile-nav:checked ~ .main-nav {
   transition: all 0.2s linear;
   transform:  translateY(0px);
-
+}
 
 .fas.fa-bars {
   position: absolute;
@@ -113,14 +115,14 @@ a:active {
   color: #FFF;
   font-size: 1.5em;
   z-index: 1;
-
+}
 
 ol,
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-
+}
 
 button {
   border: none;
@@ -240,7 +242,7 @@ button:focus {
   width: 40px;
 }
 
-.the-title {
+.title {
   font-size: 1.375rem !important;
   color: var(--header-color);
   font-weight: 800;
@@ -357,7 +359,7 @@ button:focus {
   padding: var(--default-pad-med);
 }
 
-.news-banner h2.news {
+.news-banner .news {
   border-left: 4px solid var(--highlight-color-a);
   padding-left: var(--default-pad-min);
 }
@@ -379,7 +381,7 @@ button:focus {
   display: flex;
 }
 
-.headline-list li  {
+.headline-list li {
   padding-left: var(--default-pad-med);
 }
 
@@ -453,7 +455,7 @@ button:focus {
   padding: 1em;
 }
 
-.BOOOOMBOOOOMBOOOOMTHISDOESNOTLOOOKRIGHTDOESIT? {
+.grid-it {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: masonry;
@@ -474,7 +476,7 @@ button:focus {
   background-size: cover;
 }
 
-@moooooodia screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .app-header > .container {
     flex-direction: row;
   }
