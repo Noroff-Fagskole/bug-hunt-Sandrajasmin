@@ -1,3 +1,7 @@
+Accept-Encoding: gzip, compress, br{
+  
+}
+
 .dark {
   --text-color: hsl(0, 0%, 50%);
   --text-color-light: hsl(0, 0%, 55%);
@@ -471,6 +475,7 @@ button:focus {
 }
 
 .bg-image-positioner {
+  width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
